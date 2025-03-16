@@ -1,0 +1,2 @@
+/*Write a query using the Sales.SalesOrderDetail table to come up with a count of unique ProductID 
+values that have been ordered.*/USE AdventureWorks2022;SELECTCOUNT (DISTINCT ProductID) AS CountofProductIDFROM Sales.SalesOrderDetail

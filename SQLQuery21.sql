@@ -1,0 +1,3 @@
+/*Write a query using the Sales.SalesOrderDetail table to display a value (Under 10 or 10–19 or 20–29 
+or 30–39 or 40 and over) based on the OrderQty value by using the CASE expression. Include the 
+SalesOrderID and OrderQty columns in the results.*/USE AdventureWorks2022;SELECTSalesOrderID,OrderQty,CASE WHEN OrderQty<10 THEN 'Under 10'WHEN OrderQty>=10 AND OrderQty<=19 THEN '10-19'WHEN OrderQty>=20 AND OrderQty<=29 THEN '20-29'WHEN OrderQty>=30 AND OrderQty<=39 THEN '30-39'ELSE '40 and over' END AS OrderBucketFROM Sales.SalesOrderDetail
